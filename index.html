@@ -1,12 +1,1964 @@
-DEV:
-https://irp-dev.hkexpress.com/deeplink
-https://irp-dev-booking.hkexpress.com/deeplink/manage-my-booking/my-trips
-https://irp-dev-booking.hkexpress.com/deeplink?OriginStation=HKG&DestinationStation=NRT
-UAT:
-https://irp-uat.hkexpress.com/deeplink
-https://irp-uat-booking.hkexpress.com/deeplink/manage-my-booking/my-trips
-https://irp-uat-booking.hkexpress.com/deeplink?OriginStation=HKG&DestinationStation=NRT
-PRDO:
-https://hkexpress.com/deeplink
-https://mybooking.hkexpress.com/deeplink/manage-my-booking/my-trips
-https://mybooking.hkexpress.com/deeplink?OriginStation=HKG&DestinationStation=NRT
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Link 测试页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .link-container {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+
+        .link {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .instructions {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-left: 4px solid #0066cc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Universal Link 测试页面</h1>
+
+    <div class="instructions">
+        <h2>测试说明</h2>
+        <p>此页面用于测试 Universal Link 功能。点击下面的链接应该会直接打开相应的应用页面（如果已安装应用），否则会打开网页。</p>
+    </div>
+
+        <div class="link-container">
+        <h2>home</h2>
+        <p>点击此链接测试管理行程的 Universal Link：</p>
+        <a href="https://irp-dev.hkexpress.com/deeplink"
+            class="link">https://irp-dev.hkexpress.com/deeplink</a>
+    </div>
+
+    <div class="link-container">
+        <h2>管理我的行程</h2>
+        <p>点击此链接测试管理行程的 Universal Link：</p>
+        <a href="https://irp-dev-booking.hkexpress.com/deeplink/manage-my-booking/my-trips"
+            class="link">https://irp-dev-booking.hkexpress.com/deeplink/manage-my-booking/my-trips</a>
+    </div>
+
+    <div class="link-container">
+        <h2>航班搜索</h2>
+        <p>点击此链接测试带参数的 Universal Link：</p>
+        <a href="https://irp-dev-booking.hkexpress.com/deeplink?OriginStation=HKG&DestinationStation=NRT&utmValue=xxx"
+            class="link">https://irp-dev-booking.hkexpress.com/deeplink?OriginStation=HKG&DestinationStation=NRT&utmValue=xxx</a>
+    </div>
+
+
+  </div>
+
+        <div class="link-container">
+        <h2>home</h2>
+        <p>点击此链接测试管理行程的 Universal Link：</p>
+        <a href="https://irp-uat.hkexpress.com/deeplink"
+            class="link">https://irp-uat.hkexpress.com/deeplink</a>
+    </div>
+       <div class="link-container">
+        <h2>管理我的行程</h2>
+        <p>点击此链接测试管理行程的 Universal Link：</p>
+        <a href="https://irp-uat-booking.hkexpress.com/deeplink/manage-my-booking/my-trips"
+            class="link">https://irp-uat-booking.hkexpress.com/deeplink/manage-my-booking/my-trips</a>
+    </div>
+
+    <div class="link-container">
+        <h2>航班搜索</h2>
+        <p>点击此链接测试带参数的 Universal Link：</p>
+        <a href="https://irp-uat-booking.hkexpress.com/deeplink?OriginStation=HKG&DestinationStation=NRT&utmValue=xxx"
+            class="link">https://irp-uat-booking.hkexpress.com/deeplink?OriginStation=HKG&DestinationStation=NRT&utmValue=xxx</a>
+    </div>
+
+
+
+    <div class="instructions">
+        <h2>本地测试说明</h2>
+        <p>要使用此文件进行测试：</p>
+        <ol>
+            <li>将此文件保存为 <code>index.html</code></li>
+            <li>在终端中导航到文件所在目录</li>
+            <li>运行以下命令启动本地服务器：{
+                "metadata": {
+                "app_version": "1.0.0",
+                "status_code": 200,
+                "trace_id": "68a6d4d7176ca33e887207762d47c4e6"
+                },
+                "trips": [
+                {
+                "sales_reference": "AYD7YA",
+                "booking_info": {
+                "price_status": 2
+                },
+                "fee_detail": {
+                "passengers": [
+                {
+                "passenger_key": "MCFBRFQ-",
+                "passenger_type": "ADT",
+                "title": "MS",
+                "first_name": "Jasmine",
+                "last_name": "Test",
+                "journeys": [
+                {
+                "journey_key": "VU9_IDcwMX4gfn5CS0t_MDgvMjIvMjAyNSAxMDoxNX5IS0d_MDgvMjIvMjAyNSAxNDoxNX5_",
+                "currency_code": "THB",
+                "service_charges": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 15.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 35.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 750.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "TS",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 730.0000
+                }
+                ],
+                "bundle": {
+                "price": 240.0000,
+                "bundle_code": "GO1",
+                "type": "LITE",
+                "bundle_ssr": [
+                {
+                "ssr_code": "CABB",
+                "cms_key": null
+                }
+                ]
+                },
+                "ssrs": [
+                {
+                "type": "baggage",
+                "product": [
+                {
+                "ssr_code": "PC20",
+                "cms_content_key": "dummy",
+                "item_amount": 1600.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "u_first",
+                "product": [
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 300.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "sim_card",
+                "product": [
+                {
+                "ssr_code": "SIMB",
+                "cms_content_key": "dummy",
+                "item_amount": 324.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "sport_equipment",
+                "product": [
+                {
+                "ssr_code": "BULK",
+                "cms_content_key": "dummy",
+                "item_amount": 1700.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "meal",
+                "product": [
+                {
+                "ssr_code": "SS05",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SM02",
+                "cms_content_key": "dummy",
+                "item_amount": 270.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "seats": [
+                {
+                "unit_key": "VU8hNzAxISAhNjM4OTE0NTQ1MDAwMDAwMDAwIUJLSyFIS0chMUEhWQ--",
+                "passenger_key": "MCFBRFQ-",
+                "designator": "1A",
+                "item_amount": 1100.0000,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 3,
+                "seat_type": "SWT"
+                }
+                ]
+                },
+                {
+                "journey_key": "VU9_IDcwNH4gfn5IS0d_MDgvMjcvMjAyNSAwNzo0MH5CS0t_MDgvMjcvMjAyNSAwOTo0MH5_",
+                "currency_code": "THB",
+                "service_charges": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 15.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 35.0000
+                },
+                {
+                "type": "TAX",
+                "code": "HK",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 560.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 750.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "I5",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 260.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G3",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 408.0000
+                }
+                ],
+                "bundle": {
+                "price": 2300.0000,
+                "bundle_code": "GO3",
+                "type": "MAX",
+                "bundle_ssr": [
+                {
+                "ssr_code": "CABB",
+                "cms_key": null
+                },
+                {
+                "ssr_code": "PC32",
+                "cms_key": null
+                }
+                ]
+                },
+                "ssrs": [
+                {
+                "type": "baggage",
+                "product": [
+                {
+                "ssr_code": "PC32",
+                "cms_content_key": "dummy",
+                "item_amount": 2200.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "u_first",
+                "product": [
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 400.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "sport_equipment",
+                "product": [
+                {
+                "ssr_code": "BULK",
+                "cms_content_key": "dummy",
+                "item_amount": 1700.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "meal",
+                "product": [
+                {
+                "ssr_code": "SS07",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SM01",
+                "cms_content_key": "dummy",
+                "item_amount": 280.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "seats": [
+                {
+                "unit_key": "VU8hNzA0ISAhNjM4OTE4NzcyMDAwMDAwMDAwIUhLRyFCS0shMzlCIVk-",
+                "passenger_key": "MCFBRFQ-",
+                "designator": "39B",
+                "item_amount": 400.0000,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 1,
+                "seat_type": "STD"
+                }
+                ]
+                }
+                ]
+                },
+                {
+                "passenger_key": "MSFBRFQ-",
+                "passenger_type": "ADT",
+                "title": "MR",
+                "first_name": "mr",
+                "last_name": "test",
+                "journeys": [
+                {
+                "journey_key": "VU9_IDcwMX4gfn5CS0t_MDgvMjIvMjAyNSAxMDoxNX5IS0d_MDgvMjIvMjAyNSAxNDoxNX5_",
+                "currency_code": "THB",
+                "service_charges": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 15.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 35.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 750.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "TS",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 730.0000
+                }
+                ],
+                "bundle": {
+                "price": 240.0000,
+                "bundle_code": "GO1",
+                "type": "LITE",
+                "bundle_ssr": [
+                {
+                "ssr_code": "CABB",
+                "cms_key": null
+                }
+                ]
+                },
+                "ssrs": [
+                {
+                "type": "u_first",
+                "product": [
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 300.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "meal",
+                "product": [
+                {
+                "ssr_code": "SS05",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "other",
+                "product": [
+                {
+                "ssr_code": "WS01",
+                "cms_content_key": "dummy",
+                "item_amount": 170.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "seats": [
+                {
+                "unit_key": "VU8hNzAxISAhNjM4OTE0NTQ1MDAwMDAwMDAwIUJLSyFIS0chMkEhWQ--",
+                "passenger_key": "MSFBRFQ-",
+                "designator": "2A",
+                "item_amount": 600.0000,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 22,
+                "seat_type": "UPF"
+                }
+                ]
+                },
+                {
+                "journey_key": "VU9_IDcwNH4gfn5IS0d_MDgvMjcvMjAyNSAwNzo0MH5CS0t_MDgvMjcvMjAyNSAwOTo0MH5_",
+                "currency_code": "THB",
+                "service_charges": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 15.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 35.0000
+                },
+                {
+                "type": "TAX",
+                "code": "HK",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 560.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 750.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "I5",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 260.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G3",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 408.0000
+                }
+                ],
+                "bundle": {
+                "price": 2300.0000,
+                "bundle_code": "GO3",
+                "type": "MAX",
+                "bundle_ssr": [
+                {
+                "ssr_code": "CABB",
+                "cms_key": null
+                },
+                {
+                "ssr_code": "PC32",
+                "cms_key": null
+                }
+                ]
+                },
+                "ssrs": [
+                {
+                "type": "baggage",
+                "product": [
+                {
+                "ssr_code": "PC20",
+                "cms_content_key": "dummy",
+                "item_amount": 1600.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "u_first",
+                "product": [
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 400.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "sport_equipment",
+                "product": [
+                {
+                "ssr_code": "BULK",
+                "cms_content_key": "dummy",
+                "item_amount": 1700.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "meal",
+                "product": [
+                {
+                "ssr_code": "SS07",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "other",
+                "product": [
+                {
+                "ssr_code": "SM04",
+                "cms_content_key": "dummy",
+                "item_amount": 270.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "seats": [
+                {
+                "unit_key": "VU8hNzA0ISAhNjM4OTE4NzcyMDAwMDAwMDAwIUhLRyFCS0shMzlBIVk-",
+                "passenger_key": "MSFBRFQ-",
+                "designator": "39A",
+                "item_amount": 400.0000,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 1,
+                "seat_type": "STD"
+                }
+                ]
+                }
+                ]
+                },
+                {
+                "passenger_key": "MiFDSEQ-",
+                "passenger_type": "CHD",
+                "title": "MASTER",
+                "first_name": "c",
+                "last_name": "test",
+                "journeys": [
+                {
+                "journey_key": "VU9_IDcwMX4gfn5CS0t_MDgvMjIvMjAyNSAxMDoxNX5IS0d_MDgvMjIvMjAyNSAxNDoxNX5_",
+                "currency_code": "THB",
+                "service_charges": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 15.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 35.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 750.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "TS",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 730.0000
+                }
+                ],
+                "bundle": {
+                "price": 240.0000,
+                "bundle_code": "GO1",
+                "type": "LITE",
+                "bundle_ssr": [
+                {
+                "ssr_code": "CABB",
+                "cms_key": null
+                }
+                ]
+                },
+                "ssrs": [
+                {
+                "type": "u_first",
+                "product": [
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 300.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "meal",
+                "product": [
+                {
+                "ssr_code": "SS05",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SS01",
+                "cms_content_key": "dummy",
+                "item_amount": 170.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "seats": [
+                {
+                "unit_key": "VU8hNzAxISAhNjM4OTE0NTQ1MDAwMDAwMDAwIUJLSyFIS0chMTRBIVk-",
+                "passenger_key": "MiFDSEQ-",
+                "designator": "14A",
+                "item_amount": 0.0,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 11,
+                "seat_type": "STD"
+                }
+                ]
+                },
+                {
+                "journey_key": "VU9_IDcwNH4gfn5IS0d_MDgvMjcvMjAyNSAwNzo0MH5CS0t_MDgvMjcvMjAyNSAwOTo0MH5_",
+                "currency_code": "THB",
+                "service_charges": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 15.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 35.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 750.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "I5",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 260.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G3",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 408.0000
+                }
+                ],
+                "bundle": {
+                "price": 2300.0000,
+                "bundle_code": "GO3",
+                "type": "MAX",
+                "bundle_ssr": [
+                {
+                "ssr_code": "CABB",
+                "cms_key": null
+                },
+                {
+                "ssr_code": "PC32",
+                "cms_key": null
+                }
+                ]
+                },
+                "ssrs": [
+                {
+                "type": "u_first",
+                "product": [
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 400.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "sport_equipment",
+                "product": [
+                {
+                "ssr_code": "BULK",
+                "cms_content_key": "dummy",
+                "item_amount": 2400.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "meal",
+                "product": [
+                {
+                "ssr_code": "SS07",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "other",
+                "product": [
+                {
+                "ssr_code": "SM05",
+                "cms_content_key": "dummy",
+                "item_amount": 270.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "seats": [
+                {
+                "unit_key": "VU8hNzA0ISAhNjM4OTE4NzcyMDAwMDAwMDAwIUhLRyFCS0shMzlDIVk-",
+                "passenger_key": "MiFDSEQ-",
+                "designator": "39C",
+                "item_amount": 0.0,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 1,
+                "seat_type": "STD"
+                }
+                ]
+                }
+                ]
+                },
+                {
+                "passenger_key": null,
+                "passenger_type": "INF",
+                "title": "MASTER",
+                "first_name": "bb",
+                "last_name": "test",
+                "journeys": [
+                {
+                "journey_key": "VU9_IDcwMX4gfn5CS0t_MDgvMjIvMjAyNSAxMDoxNX5IS0d_MDgvMjIvMjAyNSAxNDoxNX5_",
+                "currency_code": "THB",
+                "service_charges": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": "Infant Fee",
+                "amount": 1500.0000
+                }
+                ],
+                "bundle": null,
+                "ssrs": [],
+                "seats": []
+                },
+                {
+                "journey_key": "VU9_IDcwNH4gfn5IS0d_MDgvMjcvMjAyNSAwNzo0MH5CS0t_MDgvMjcvMjAyNSAwOTo0MH5_",
+                "currency_code": "THB",
+                "service_charges": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": "Infant Fee",
+                "amount": 1500.0000
+                }
+                ],
+                "bundle": null,
+                "ssrs": [],
+                "seats": []
+                }
+                ]
+                }
+                ],
+                "others": {
+                "fee_breakdown": [
+                {
+                "code": "CBOS",
+                "item_amount": 212.0000
+                }
+                ]
+                }
+                },
+                "payment_detail": {
+                "status": "SETTLED"
+                },
+                "payment_record": [
+                {
+                "payment_method_code": "UC",
+                "master_payment_option": "UC",
+                "payment_date": "2025-08-20T05:27:39.873Z",
+                "currency_code": "THB",
+                "item_amount": 42820.0000,
+                "collected_currency_code": "THB",
+                "collected_amount": 42820.0000,
+                "payment_status": "Approved"
+                },
+                {
+                "payment_method_code": "UC",
+                "master_payment_option": "UC",
+                "payment_date": "2025-08-20T05:34:03.55Z",
+                "currency_code": "THB",
+                "item_amount": 4400.0000,
+                "collected_currency_code": "THB",
+                "collected_amount": 4400.0000,
+                "payment_status": "Approved"
+                }
+                ],
+                "is_customer_editable": true,
+                "is_flight_cancel": true,
+                "is_flight_itinerary_viewable": true,
+                "insurance": {
+                "is_sold": false,
+                "is_eligible": false
+                },
+                "carbon_offset": {
+                "is_sold": true,
+                "is_eligible": false
+                },
+                "is_carbon_offset_sold": true,
+                "carbon_offset_fees_total": 212.0000,
+                "passengers": [
+                {
+                "passenger_key": "MCFBRFQ-",
+                "passenger_type": "ADT",
+                "title": "MS",
+                "first_name": "Jasmine",
+                "last_name": "Test",
+                "email": "ziqiu.jiang@accenture.cn",
+                "phone_number": "85261269259",
+                "date_of_birth": "1998-12-22",
+                "residence_country": "CN",
+                "travel_document": {
+                "type": "PASSPORT",
+                "issuing_country": "CN",
+                "nationality": "CN",
+                "number": "H20001892",
+                "expiry_date": "2029-08-22"
+                },
+                "is_primary_contact": false,
+                "is_business_contact": false
+                },
+                {
+                "passenger_key": "MSFBRFQ-",
+                "passenger_type": "ADT",
+                "title": "MR",
+                "first_name": "mr",
+                "last_name": "test",
+                "email": "fiona.kwok@hkexpress.com",
+                "phone_number": "",
+                "date_of_birth": "2001-08-22",
+                "residence_country": "CN",
+                "travel_document": {
+                "type": "PASSPORT",
+                "issuing_country": "CN",
+                "nationality": "CN",
+                "number": "H20001893",
+                "expiry_date": "2027-08-22"
+                },
+                "is_primary_contact": false,
+                "is_business_contact": false
+                },
+                {
+                "passenger_key": "MiFDSEQ-",
+                "passenger_type": "CHD",
+                "title": "MASTER",
+                "first_name": "c",
+                "last_name": "test",
+                "date_of_birth": "2019-08-22",
+                "residence_country": "CN",
+                "travel_document": {
+                "type": "PASSPORT",
+                "issuing_country": "CN",
+                "nationality": "CN",
+                "number": "H20001894",
+                "expiry_date": "2028-08-22"
+                },
+                "is_primary_contact": false,
+                "is_business_contact": false
+                },
+                {
+                "associated_adult_passenger_key": "MCFBRFQ-",
+                "passenger_type": "INF",
+                "title": "MASTER",
+                "first_name": "bb",
+                "last_name": "test",
+                "date_of_birth": "2025-08-20",
+                "residence_country": "CN",
+                "travel_document": {
+                "type": "PASSPORT",
+                "issuing_country": "CN",
+                "nationality": "CN",
+                "number": "H20001839",
+                "expiry_date": "2029-08-22"
+                },
+                "is_primary_contact": false,
+                "is_business_contact": false
+                }
+                ],
+                "journeys": [
+                {
+                "departure_date_time": "2025-08-22T10:15:00+07:00",
+                "departure_timezone": "+07:00",
+                "arrival_date_time": "2025-08-22T14:15:00+08:00",
+                "arrival_timezone": "+08:00",
+                "duration": {
+                "hours": 3,
+                "minutes": 0
+                },
+                "journey_key": "VU9_IDcwMX4gfn5CS0t_MDgvMjIvMjAyNSAxMDoxNX5IS0d_MDgvMjIvMjAyNSAxNDoxNX5_",
+                "origin": {
+                "airport_code": "BKK"
+                },
+                "destination": {
+                "airport_code": "HKG",
+                "terminal": "1"
+                },
+                "ssrs": [
+                {
+                "type": "baggage",
+                "product": [
+                {
+                "ssr_code": "PC20",
+                "cms_content_key": "dummy",
+                "item_amount": 1600.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "u_first",
+                "product": [
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 300.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 300.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 300.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "sim_card",
+                "product": [
+                {
+                "ssr_code": "SIMB",
+                "cms_content_key": "dummy",
+                "item_amount": 324.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "sport_equipment",
+                "product": [
+                {
+                "ssr_code": "BULK",
+                "cms_content_key": "dummy",
+                "item_amount": 1700.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "segments": [
+                {
+                "departure_date_time": "2025-08-22T10:15:00+07:00",
+                "departure_timezone": "+07:00",
+                "arrival_date_time": "2025-08-22T14:15:00+08:00",
+                "arrival_timezone": "+08:00",
+                "duration": {
+                "hours": 3,
+                "minutes": 0
+                },
+                "segment_key": "VU9_IDcwMX4gfn5CS0t_MDgvMjIvMjAyNSAxMDoxNX5IS0d_MDgvMjIvMjAyNSAxNDoxNX5_",
+                "flight_number": "UO701",
+                "origin": "BKK",
+                "destination": "HKG",
+                "destination_airport_terminal": "1",
+                "ssrs": [
+                {
+                "type": "meal",
+                "product": [
+                {
+                "ssr_code": "SS05",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SS05",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SS05",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SS01",
+                "cms_content_key": "dummy",
+                "item_amount": 170.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SM02",
+                "cms_content_key": "dummy",
+                "item_amount": 270.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "other",
+                "product": [
+                {
+                "ssr_code": "WS01",
+                "cms_content_key": "dummy",
+                "item_amount": 170.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "seats": [
+                {
+                "unit_key": "VU8hNzAxISAhNjM4OTE0NTQ1MDAwMDAwMDAwIUJLSyFIS0chMUEhWQ--",
+                "passenger_key": "MCFBRFQ-",
+                "designator": "1A",
+                "item_amount": 1100.0000,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 3,
+                "seat_type": "SWT"
+                },
+                {
+                "unit_key": "VU8hNzAxISAhNjM4OTE0NTQ1MDAwMDAwMDAwIUJLSyFIS0chMTRBIVk-",
+                "passenger_key": "MiFDSEQ-",
+                "designator": "14A",
+                "item_amount": 0.0,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 11,
+                "seat_type": "STD"
+                },
+                {
+                "unit_key": "VU8hNzAxISAhNjM4OTE0NTQ1MDAwMDAwMDAwIUJLSyFIS0chMkEhWQ--",
+                "passenger_key": "MSFBRFQ-",
+                "designator": "2A",
+                "item_amount": 600.0000,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 22,
+                "seat_type": "UPF"
+                }
+                ],
+                "is_ferry": false,
+                "is_bus": false,
+                "legs": [
+                {
+                "status": 0
+                }
+                ]
+                }
+                ],
+                "fare": {
+                "fare_availability_key": null,
+                "currency_code": "THB",
+                "adult_fare_details": {
+                "service_charge": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 35.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 15.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "TS",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 730.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 750.0000
+                }
+                ]
+                },
+                "child_fare_details": {
+                "service_charge": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 35.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 15.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "TS",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 730.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "BKK-HKG",
+                "amount": 750.0000
+                }
+                ]
+                },
+                "infant_details": {
+                "service_charge": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": "Infant Fee",
+                "amount": 1500.0000
+                }
+                ]
+                },
+                "bundle": {
+                "bundle_code": "GO1",
+                "type": "LITE",
+                "adult_price": 480.0000,
+                "child_price": 240.0000,
+                "per_adult_price": 240.0000,
+                "per_child_price": 240.0000,
+                "bundle_ssr": [
+                {
+                "ssr_code": "CABB",
+                "cms_key": "CABB_CONTENT_KEY"
+                },
+                {
+                "ssr_code": "CABB",
+                "cms_key": "CABB_CONTENT_KEY"
+                },
+                {
+                "ssr_code": "CABB",
+                "cms_key": "CABB_CONTENT_KEY"
+                }
+                ]
+                },
+                "discount": null
+                },
+                "journey_eligibility": {
+                "olci_eligibility": true,
+                "olci_start_time": "2025-08-20T03:15:00Z",
+                "olci_end_time": "2025-08-22T02:00:00Z",
+                "change_flight_eligibility": false,
+                "update_trip_eligibility": true,
+                "is_any_passenger_checked_in": false,
+                "ufirst_eligibility": false,
+                "eboarding_pass_eligibility": false
+                },
+                "eligibilities": [
+                {
+                "passenger_key": "MCFBRFQ-",
+                "olci_eligible": true,
+                "sdk_eligible": false
+                },
+                {
+                "passenger_key": "MSFBRFQ-",
+                "olci_eligible": true,
+                "sdk_eligible": false
+                },
+                {
+                "passenger_key": "MiFDSEQ-",
+                "olci_eligible": true,
+                "sdk_eligible": false
+                }
+                ]
+                },
+                {
+                "departure_date_time": "2025-08-27T07:40:00+08:00",
+                "departure_timezone": "+08:00",
+                "arrival_date_time": "2025-08-27T09:40:00+07:00",
+                "arrival_timezone": "+07:00",
+                "duration": {
+                "hours": 3,
+                "minutes": 0
+                },
+                "journey_key": "VU9_IDcwNH4gfn5IS0d_MDgvMjcvMjAyNSAwNzo0MH5CS0t_MDgvMjcvMjAyNSAwOTo0MH5_",
+                "origin": {
+                "airport_code": "HKG",
+                "terminal": "1"
+                },
+                "destination": {
+                "airport_code": "BKK"
+                },
+                "ssrs": [
+                {
+                "type": "baggage",
+                "product": [
+                {
+                "ssr_code": "PC20",
+                "cms_content_key": "dummy",
+                "item_amount": 1600.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "PC32",
+                "cms_content_key": "dummy",
+                "item_amount": 2200.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "u_first",
+                "product": [
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 400.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 400.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "XPCI",
+                "cms_content_key": "dummy",
+                "item_amount": 400.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "sport_equipment",
+                "product": [
+                {
+                "ssr_code": "BULK",
+                "cms_content_key": "dummy",
+                "item_amount": 1700.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "BULK",
+                "cms_content_key": "dummy",
+                "item_amount": 2400.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "BULK",
+                "cms_content_key": "dummy",
+                "item_amount": 1700.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "segments": [
+                {
+                "departure_date_time": "2025-08-27T07:40:00+08:00",
+                "departure_timezone": "+08:00",
+                "arrival_date_time": "2025-08-27T09:40:00+07:00",
+                "arrival_timezone": "+07:00",
+                "duration": {
+                "hours": 3,
+                "minutes": 0
+                },
+                "segment_key": "VU9_IDcwNH4gfn5IS0d_MDgvMjcvMjAyNSAwNzo0MH5CS0t_MDgvMjcvMjAyNSAwOTo0MH5_",
+                "flight_number": "UO704",
+                "origin": "HKG",
+                "origin_airport_terminal": "1",
+                "destination": "BKK",
+                "ssrs": [
+                {
+                "type": "meal",
+                "product": [
+                {
+                "ssr_code": "SS07",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SM01",
+                "cms_content_key": "dummy",
+                "item_amount": 280.000000,
+                "currency_code": "THB",
+                "passenger_key": "MCFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SS07",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SS07",
+                "cms_content_key": "dummy",
+                "item_amount": 120.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                },
+                {
+                "type": "other",
+                "product": [
+                {
+                "ssr_code": "SM05",
+                "cms_content_key": "dummy",
+                "item_amount": 270.000000,
+                "currency_code": "THB",
+                "passenger_key": "MiFDSEQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                },
+                {
+                "ssr_code": "SM04",
+                "cms_content_key": "dummy",
+                "item_amount": 270.000000,
+                "currency_code": "THB",
+                "passenger_key": "MSFBRFQ-",
+                "is_pre_order": null,
+                "is_vegetarian": null,
+                "count": 1
+                }
+                ]
+                }
+                ],
+                "seats": [
+                {
+                "unit_key": "VU8hNzA0ISAhNjM4OTE4NzcyMDAwMDAwMDAwIUhLRyFCS0shMzlBIVk-",
+                "passenger_key": "MSFBRFQ-",
+                "designator": "39A",
+                "item_amount": 400.0000,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 1,
+                "seat_type": "STD"
+                },
+                {
+                "unit_key": "VU8hNzA0ISAhNjM4OTE4NzcyMDAwMDAwMDAwIUhLRyFCS0shMzlDIVk-",
+                "passenger_key": "MiFDSEQ-",
+                "designator": "39C",
+                "item_amount": 0.0,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 1,
+                "seat_type": "STD"
+                },
+                {
+                "unit_key": "VU8hNzA0ISAhNjM4OTE4NzcyMDAwMDAwMDAwIUhLRyFCS0shMzlCIVk-",
+                "passenger_key": "MCFBRFQ-",
+                "designator": "39B",
+                "item_amount": 400.0000,
+                "currency_code": "THB",
+                "is_exit_row": false,
+                "seat_group": 1,
+                "seat_type": "STD"
+                }
+                ],
+                "is_ferry": false,
+                "is_bus": false,
+                "legs": [
+                {
+                "status": 0
+                }
+                ]
+                }
+                ],
+                "fare": {
+                "fare_availability_key": null,
+                "currency_code": "THB",
+                "adult_fare_details": {
+                "service_charge": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "TAX",
+                "code": "HK",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 560.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G3",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 408.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "I5",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 260.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 750.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 35.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 15.0000
+                }
+                ]
+                },
+                "child_fare_details": {
+                "service_charge": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": null,
+                "amount": 820.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G3",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 408.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "I5",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 260.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "YRNREF",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 750.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "E7",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 35.0000
+                },
+                {
+                "type": "SURCHARGE",
+                "code": "G8",
+                "currency_code": "THB",
+                "description": "HKG-BKK",
+                "amount": 15.0000
+                }
+                ]
+                },
+                "infant_details": {
+                "service_charge": [
+                {
+                "type": "FARE",
+                "code": null,
+                "currency_code": "THB",
+                "description": "Infant Fee",
+                "amount": 1500.0000
+                }
+                ]
+                },
+                "bundle": {
+                "bundle_code": "GO3",
+                "type": "MAX",
+                "adult_price": 4600.0000,
+                "child_price": 2300.0000,
+                "per_adult_price": 2300.0000,
+                "per_child_price": 2300.0000,
+                "bundle_ssr": [
+                {
+                "ssr_code": "CABB",
+                "cms_key": "CABB_CONTENT_KEY"
+                },
+                {
+                "ssr_code": "PC32",
+                "cms_key": null
+                },
+                {
+                "ssr_code": "CABB",
+                "cms_key": "CABB_CONTENT_KEY"
+                },
+                {
+                "ssr_code": "PC32",
+                "cms_key": null
+                },
+                {
+                "ssr_code": "CABB",
+                "cms_key": "CABB_CONTENT_KEY"
+                },
+                {
+                "ssr_code": "PC32",
+                "cms_key": null
+                },
+                {
+                "ssr_code": "MBFS",
+                "cms_key": ""
+                }
+                ]
+                },
+                "discount": null
+                },
+                "journey_eligibility": {
+                "olci_eligibility": false,
+                "olci_start_time": "2025-08-24T23:40:00Z",
+                "olci_end_time": "2025-08-26T22:25:00Z",
+                "change_flight_eligibility": true,
+                "update_trip_eligibility": true,
+                "is_any_passenger_checked_in": false,
+                "ufirst_eligibility": false,
+                "eboarding_pass_eligibility": false
+                },
+                "eligibilities": [
+                {
+                "passenger_key": "MCFBRFQ-",
+                "olci_eligible": true,
+                "sdk_eligible": false
+                },
+                {
+                "passenger_key": "MSFBRFQ-",
+                "olci_eligible": true,
+                "sdk_eligible": true
+                },
+                {
+                "passenger_key": "MiFDSEQ-",
+                "olci_eligible": true,
+                "sdk_eligible": true
+                }
+                ]
+                }
+                ],
+                "contact": {
+                "first_name": "Jasmine",
+                "last_name": "Test",
+                "title": "MS",
+                "email_address": "kirsty.kong@Hkexpress.com",
+                "phone_number": "85261269259"
+                },
+                "convenience_fees_total": 1380.0000,
+                "total_amount": 47220.0000,
+                "credit_balance": 0.0000,
+                "currency_code": "THB",
+                "others": {
+                "other_fee_list": []
+                },
+                "is_pax_info_complete": true,
+                "missed_passenger_or_contact_info": {
+                "missing_info": null
+                },
+                "fare_types": [
+                "R"
+                ]
+                }
+                ]
+                }
+                <ul>
+                    <li><strong>Python 3:</strong> <code>python -m http.server 8000</code></li>
+                    <li><strong>Node.js (http-server):</strong> <code>npx http-server -p 8000</code></li>
+                    <li><strong>PHP:</strong> <code>php -S localhost:8000</code></li>
+                </ul>
+            </li>
+            <li>在移动设备上访问 <code>http://[你的电脑IP]:8000</code></li>
+        </ol>
+    </div>
+</body>
+
+</html>
